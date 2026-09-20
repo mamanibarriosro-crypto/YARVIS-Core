@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YARVIS · Ingeniería, contigo</title>
+<meta name="description" content="Asistente de escritorio para ingeniería. Conoce YARVIS, su biblioteca y el estado de la versión Windows.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230c1220'/%3E%3Cpath d='M8 7l8 11L24 7M16 18v8' stroke='%236de9ed' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="core3d" aria-hidden="true"></canvas>
+<div class="scanlines" aria-hidden="true"></div>
+
+<header>
+  <a class="brand" href="#">Y<span>Λ</span>RVIS</a>
+  <nav aria-label="Navegación principal">
+    <a href="#conocimiento">Conocimiento</a>
+    <a href="#privacidad">Privacidad</a>
+    <a class="nav-button" href="#descarga">Windows ↗</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="eyebrow">ASISTENTE DE ESCRITORIO · NÚCLEO EN LÍNEA</div>
+    <h1>Tu siguiente idea.<br><span>Un paso más cerca.</span></h1>
+    <p class="intro">Voz, documentos y herramientas de ingeniería en un mismo asistente. YARVIS se construye para acompañarte desde la primera pregunta hasta el informe final.</p>
+    <div class="actions">
+      <a class="primary" href="#descarga">Ver versión para Windows <span>↓</span></a>
+      <a class="ghost" href="#conocimiento">Explorar la biblioteca ↗</a>
+    </div>
+    <div class="hero-footer">
+      <span>01 / PENSADO PARA INGENIERÍA</span>
+      <span class="status"><i></i> NÚCLEO ACTIVO · SINCRONIZACIÓN EN LA NUBE</span>
+      <span>Tu conocimiento. Tu espacio.</span>
+    </div>
+  </section>
+
+  <section id="conocimiento">
+    <div class="eyebrow">UNA BASE PARA EMPEZAR</div>
+    <h2>Cuatro especialidades.<br>Una forma de trabajar.</h2>
+    <p>La biblioteca en preparación reúne metodología de investigación, apuntes técnicos y formatos reutilizables. Su publicación se realiza después de revisar los datos personales.</p>
+    <div class="grid">
+      <article><span class="number">01</span><h3>Informes LaTeX</h3><p>Estructura académica, tablas, figuras, referencias y presentación de resultados.</p></article>
+      <article><span class="number">02</span><h3>Informes técnicos</h3><p>Metodología y trazabilidad, con una presentación adaptada al tipo de entrega.</p></article>
+      <article><span class="number">03</span><h3>Prácticas de ingeniería</h3><p>Procedimientos, cálculos y fuentes organizados alrededor de cada materia.</p></article>
+      <article><span class="number">04</span><h3>HP Prime / PPL</h3><p>Instrucciones especializadas para desarrollar y verificar programas.</p></article>
+    </div>
+  </section>
+
+  <section class="privacy" id="privacidad">
+    <div>
+      <div class="eyebrow">CONOCIMIENTO COMPARTIDO · DATOS PRIVADOS</div>
+      <h2>Aprender juntos.<br>Conservar lo personal.</h2>
+    </div>
+    <div>
+      <p>La biblioteca general está destinada a contenido técnico y plantillas sin datos personales.</p>
+      <ul>
+        <li>Conversaciones y trabajos personales quedan fuera.</li>
+        <li>Claves API y contraseñas no forman parte del descargable.</li>
+        <li>Nombres, cédulas y registros universitarios se sustituyen en los formatos antes de publicarlos.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="download" id="descarga">
+    <div class="eyebrow">YARVIS PARA WINDOWS</div>
+    <h2>Descarga oficial</h2>
+    <a class="primary" href="https://github.com/mamanibarriosro-crypto/YARVIS-Core/releases/download/v1.0.0-beta.2/Jarvis-Setup.exe" target="_blank" rel="noopener noreferrer">Descargar YARVIS <span>↓</span></a>
+    <p class="small">Windows 10 / 11 · 64 bits · 239 MB<br>La versión para móviles y el acceso con Google o GitHub están en evaluación.</p>
+    <p class="legal">La descarga se sirve desde GitHub Releases. El instalador es firmado por el publisher indicado en el instalador. Solo descarga desde este enlace oficial.</p>
+  </section>
+</main>
+
+<footer>
+  <a class="brand" href="#">Y<span>Λ</span>RVIS</a>
+  <span class="credit">Creado por <strong>Ronald Mamani Barrios</strong></span>
+  <span>Asistente de ingeniería · Vista previa</span>
+  <a href="#privacidad">Privacidad</a>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
